@@ -4,6 +4,23 @@
 </h1>
 
 <p align="center">
+<a href="https://github.com/JackCme/inko.py/actions?query=workflow%3A%22Publish+Python+%F0%9F%90%8D+distributions+%F0%9F%93%A6+to+PyPI+and+TestPyPI%22">
+<img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/JackCme/inko.py/Publish Python 🐍 distributions 📦 to PyPI and TestPyPI?label=Action%20build&logo=Github">
+</a>
+
+<a href="https://pypi.org/project/inko-py/">
+<img alt="PyPI" src="https://img.shields.io/pypi/v/inko-py?logo=pypi&logoColor=%23e0e0e0">
+</a>
+
+<img alt="PyPI - Wheel" src="https://img.shields.io/pypi/wheel/inko-py">
+
+<a href="https://github.com/Jackcme/inko.py/blob/master/LICENSE">
+<img alt="PyPI - License" src="https://img.shields.io/pypi/l/inko-py">
+</a>
+
+</p>
+
+<p align="center">
   <b>Open Source Library, Converting Misspelled English characters into Korean letters (& vice versa)</b></br>
   <b>Python implementation of <a href="https://github.com/738/inko">Inko.js</a></b></br>
 </p>
