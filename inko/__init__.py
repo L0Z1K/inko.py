@@ -1,4 +1,4 @@
-import math
+import math, re
 
 class Inko:
     영어 = "rRseEfaqQtTdwWczxvgASDFGZXCVkoiOjpuPhynbmlYUIHJKLBNM"
@@ -50,13 +50,17 @@ class Inko:
         except ValueError:
             return -1    
     
-    def __init__(self, _option=None):
+    def __init__(self, **_option):
         option = {} if _option is None else _option
-        self._allowDoubleConsonant = option.allowDoubleConsonant if "allowDoubleConsonant" in option else False
+        self._allowDoubleConsonant = option["allowDoubleConsonant"] if "allowDoubleConsonant" in option else False
+    
+    def config(self, **_option):
+        option = {} if _option is None else _option
+        self._allowDoubleConsonant = option["allowDoubleConsonant"] if "allowDoubleConsonant" in option else False
 
-    def en2ko(self, _input, _option=None):
+    def en2ko(self, _input, **_option):
         option = {} if _option is None else _option
-        self._allowDoubleConsonant = option.allowDoubleConsonant if "allowDoubleConsonant" in option else self._allowDoubleConsonant
+        self._allowDoubleConsonant = option["allowDoubleConsonant"] if "allowDoubleConsonant" in option else self._allowDoubleConsonant
         stateLength = [0, 1, 1, 2, 2, 2, 3, 3, 4, 4, 5]
         transitions = [
             [1, 1, 2, 2],   # 0, EMPTY
@@ -232,3 +236,8 @@ class Inko:
                 return [-1, 중1, 중2, -1, -1]
         
         return [-1, -1, -1, -1, -1]
+
+    def is한글(self, char):
+        if len(char) > 1:
+            raise Exception("한 글자가 아닙니다.")
+        return re.match("[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]", char) is not None
