@@ -5,7 +5,7 @@ with open("README.md", "r", encoding='utf-8') as fh:
 
 setuptools.setup(
     name="inko-py",
-    version="0.0.2",
+    version="1.0.0",
     author="JackCme",
     author_email="pitou_106@naver.com",
     description="Python pip module of Inko.js",
