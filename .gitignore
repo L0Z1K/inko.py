@@ -103,5 +103,5 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-# visual studio launch.json
-launch.json
+# visual studio settings
+.vscode
