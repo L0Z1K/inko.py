@@ -1,11 +1,11 @@
 import setuptools
 
-with open("README.md", "r") as fh:
+with open("README.md", "r", encoding='utf-8') as fh:
     long_description = fh.read()
 
 setuptools.setup(
     name="inko-py",
-    version="0.0.1",
+    version="0.0.2",
     author="JackCme",
     author_email="pitou_106@naver.com",
     description="Python pip module of Inko.js",
