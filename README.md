@@ -93,7 +93,7 @@ myInko.config(allowDoubleConsonant=True)
 ```python
 myInko.en2ko('rtrt', allowDoubleConsonant=True);
 # output: ㄳㄳ
-myInko.en2ko('rtrt', {allowDoubleConsonant=False);
+myInko.en2ko('rtrt', allowDoubleConsonant=False);
 # output: ㄱㅅㄱㅅ
 ```
 
